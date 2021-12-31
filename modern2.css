@@ -107,7 +107,7 @@ html{
 .imagens{
     display: flex;
     grid-area: imagem;
-    background-image: url("img/forma5.png");
+    background-image: url("forma5.png");
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -131,7 +131,7 @@ html{
 }
 .div-img{
     grid-area: img;
-    background: url(img/img_section.jpg);
+    background: url(img_section.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -251,7 +251,7 @@ html{
 
 .div-img2{
     grid-area: img2;
-    background: url(img/img_section3.jpg);
+    background: url(img_section3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -473,7 +473,7 @@ input::placeholder{
         display: grid;
         grid-template-columns: 1fr;
         justify-items: center;
-       /* background-image: url("img/forma_mobile.png");*/
+       /* background-image: url("forma_mobile.png");*/
         background-repeat: no-repeat;
         background-size: contain;
         
