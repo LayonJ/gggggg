@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    font-size: 100%;
     font-family: 'Poppins', sans-serif;
     list-style: none;
     text-decoration: none;
@@ -12,9 +12,8 @@ img{
     
     max-width: 100%;
 }
-
-html{
-    font-size: 62.5%;
+body{
+    
 }
 
 /*HEADER*/
@@ -36,7 +35,6 @@ html{
 
 .menu li a{
     color: #fff;
-    font-size: 1.5rem;
 }
 
 /*HERO CABEÇALHO*/
@@ -56,15 +54,13 @@ html{
 }
 .texto .titulo{
     font-weight: 700;
-    font-size: 5.0rem;
-    color: black;
+    font-size: 40px;
 }
 
 .texto .texto-hero{
     margin-top: 10px;
     font-weight: 600;
     color: #477299;
-    font-size: 1.5rem;
 }
 
 .botao{
@@ -117,7 +113,7 @@ html{
     grid-template-areas: "teste2"
      "teste3";
      padding: 30px;
-    row-gap: 3.0rem;
+     
 }
 
 .servicos h1{
@@ -185,19 +181,16 @@ html{
 
 .sobre-nos .titulo{
     font-weight: 700;
-    font-size: 3.0rem;
-    
+    font-size: 30px;
 }
 
 .titulo-azul{
     color: #477299;
     font-weight: 600;
-    font-size: 1.6rem;
 }
 
 .parte2 p{
     color: #333;
-    font-size: 1.5rem;
 }
 
 .gestao-eficiente{
@@ -231,7 +224,6 @@ html{
 
 .estrategia{
     grid-area: serv;
-    padding: 2%;
 }
 
 .div-img2 img{
@@ -239,20 +231,24 @@ html{
 }
 .estrategia h1{
     color: #a4d7ef;
-    font-size: 3.0rem;
+    font-size: 30px;
 }
 
 .estrategia p{
     color: #fff;
     font-weight: 700;
     margin: 20px 0 20px 0;
-    font-size: 1.5rem;
+    
+}
+
+.estrategia ul li{
+    
 }
 
 .estrategia ul p{
     display: inline;
     margin-left: 15px;
-    font-size: 1.5rem;
+    
 }
 
 /*PARTE 4*/
@@ -269,7 +265,7 @@ html{
     margin-left: 2%;
 }
 .texto-mockup h1{
-    font-size: 3.0rem;
+    font-size: 30px;
     font-weight: 700;
     color: #2a75b5;
 }
@@ -277,7 +273,6 @@ html{
 .texto-mockup p{
     color: #333;
     text-align: left;
-    font-size: 1.5rem;
 }
 
 .texto-mockup button{
@@ -287,7 +282,6 @@ html{
     border: 2px solid #0b4257;
     font-weight: 700;
     margin-top: 10px;
-    font-size: 1.6rem;
 }
 
 /*NEWSLETTER*/
@@ -303,7 +297,7 @@ html{
 }
 
 .texto-form h1{
-    font-size: 3.0rem;
+    font-size: 30px;
     font-weight: 700;
     color: #fff;
     margin-bottom: 10px;
@@ -312,14 +306,12 @@ html{
 
 .texto-form p{
     color: #fff;
-    font-size: 1.5rem;
 }
 
 form{
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2%;
-    
 }
 
 form input{
@@ -357,7 +349,6 @@ input::placeholder{
     font-weight: 700;
     border-style: none;
     padding: 10px 5px 10px 5px;
-    font-size: 1.6rem;
 }
 
 .newsletter .div-botao{
@@ -379,23 +370,20 @@ input::placeholder{
 
 .texto-footer h2{
     color: #fff;
-    font-size: 3.0rem;
+    font-size: 35px;
     font-weight: 500;
 }
 
 .texto-footer p{
     color: #fff;
-    font-size: 1.5rem;
 }
 
 .footer-menu h2,a{
     color: #fff;
-    font-size: 1.5rem;
 }
 
-.footer-sobre h2,p{
+.footer-sobre{
     color: #fff;
-    font-size: 1.5rem;
 }
 
 .direitos-reservados{
@@ -403,146 +391,4 @@ input::placeholder{
     color: #fff;
     text-align: center;
     padding: 15px;
-    
-}
-
-.direitos-reservados p{
-    font-size: 1.5rem;
-}
-
-
-@media (max-width: 1120px){
-    html{
-        font-size: 50%;
-    }
-}
-
-@media (max-width: 1050px){
-    html{
-        font-size: 50%;
-    }
-}
-
-@media (max-width: 965px){
-    .sobre-nos .titulo{
-        font-size: 2.5rem;
-    }
-
-    .estrategia h1{
-        font-size: 2.5rem;
-    }
-
-    .texto .titulo{
-        font-size: 4.5rem;
-    }
-}
-
-@media (max-width: 540px){
-    
-    .imagens{display: none;}
-
-    .hero{
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
-       /* background-image: url("img/forma_mobile.png");*/
-        background-repeat: no-repeat;
-        background-size: contain;
-        
-    }
-    .hero .texto{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    .hero p{
-        text-align: center;
-    }
-
-    .hero button{
-        width: 30%;
-        padding: 5px;
-    }
-    .hero .titulo{
-        color: black;
-        font-size: 3.0rem;
-        
-    }
-
-    .cabecalho .logo-div{
-        width: 28rem;
-    }
-    .cabecalho .menu{
-        display: none;
-    }
-
-    .parte1{
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
-        row-gap: 0rem;
-        padding: 0;
-    }
-
-    .parte1 .teste2,.teste3{
-        display: block;
-        width: 30rem;
-    }
-    .teste3 li{
-        margin-top: 2rem;
-    }
-
-    .teste2 li{
-        margin-top: 2rem;
-    }
-
-    .parte2{
-        column-gap: 0;
-        row-gap: 0;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .parte2 .gestao-eficiente{
-        margin-bottom: 2rem;
-    }
-
-    .parte2 .desenvolvimento-web{
-        margin-bottom: 2.5rem;
-    }
-
-    .parte3{
-        display: flex;
-        flex-direction: column;
-        row-gap: 0;
-        column-gap: 0;
-    }
-
-    .parte4{
-        display: flex;
-        flex-direction: column;
-        row-gap: 0;
-        column-gap: 0;
-        align-items: center;
-        text-align: center;
-    }
-
-    .newsletter form{
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .footer-map{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .footer-menu{
-        margin: 2rem 0 2rem 0;
-    }
-
-    
 }
