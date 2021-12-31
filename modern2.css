@@ -99,7 +99,7 @@ body{
 }
 .div-img{
     grid-area: img;
-    background: url(img/img_section.jpg);
+    background: url(img_section.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -216,7 +216,7 @@ body{
 
 .div-img2{
     grid-area: img2;
-    background: url(img/img_section3.jpg);
+    background: url(img_section3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -391,4 +391,139 @@ input::placeholder{
     color: #fff;
     text-align: center;
     padding: 15px;
+}
+@media (max-width: 1120px){
+    html{
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 1050px){
+    html{
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 965px){
+    .sobre-nos .titulo{
+        font-size: 2.5rem;
+    }
+
+    .estrategia h1{
+        font-size: 2.5rem;
+    }
+
+    .texto .titulo{
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width: 540px){
+    
+    .imagens{display: none;}
+
+    .hero{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+       /* background-image: url("forma_mobile.png");*/
+        background-repeat: no-repeat;
+        background-size: contain;
+        
+    }
+    .hero .texto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .hero p{
+        text-align: center;
+    }
+
+    .hero button{
+        width: 30%;
+        padding: 5px;
+    }
+    .hero .titulo{
+        color: black;
+        font-size: 3.0rem;
+        
+    }
+
+    .cabecalho .logo-div{
+        width: 28rem;
+    }
+    .cabecalho .menu{
+        display: none;
+    }
+
+    .parte1{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        row-gap: 0rem;
+        padding: 0;
+    }
+
+    .parte1 .teste2,.teste3{
+        display: block;
+        width: 30rem;
+    }
+    .teste3 li{
+        margin-top: 2rem;
+    }
+
+    .teste2 li{
+        margin-top: 2rem;
+    }
+
+    .parte2{
+        column-gap: 0;
+        row-gap: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .parte2 .gestao-eficiente{
+        margin-bottom: 2rem;
+    }
+
+    .parte2 .desenvolvimento-web{
+        margin-bottom: 2.5rem;
+    }
+
+    .parte3{
+        display: flex;
+        flex-direction: column;
+        row-gap: 0;
+        column-gap: 0;
+    }
+
+    .parte4{
+        display: flex;
+        flex-direction: column;
+        row-gap: 0;
+        column-gap: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .newsletter form{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .footer-map{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-menu{
+        margin: 2rem 0 2rem 0;
+    }
+
+    
 }
