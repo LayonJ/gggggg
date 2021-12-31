@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 100%;
+    
     font-family: 'Poppins', sans-serif;
     list-style: none;
     text-decoration: none;
@@ -12,8 +12,9 @@ img{
     
     max-width: 100%;
 }
-body{
-    
+
+html{
+    font-size: 62.5%;
 }
 
 /*HEADER*/
@@ -21,12 +22,36 @@ body{
 .cabecalho{
     display: flex;
     padding: 0 30px 0 30px;
+    justify-content: space-between;
+}
+
+.menu-section.on{
+    display: flex;
+    position: static;
+    justify-items: flex-end;
+    height: auto;
+    width: auto;
+}
+
+.menu-mobile{
+    display: none;
 }
 
 .menu{
-    display: flex;
-    padding-left: 30%;
+    display: block;
     z-index: 1;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu-section.on .menu ul{
+    display: flex;
+}
+
+.menu-section.on .menu-toogle{
+    display: none;
 }
 
 .menu li{
@@ -35,6 +60,7 @@ body{
 
 .menu li a{
     color: #fff;
+    font-size: 1.5rem;
 }
 
 /*HERO CABEÇALHO*/
@@ -48,19 +74,25 @@ body{
     padding: 0 30px 0 30px;
 }
 
+.hero-mobile{
+    display: none;
+}
+
 .texto{
     margin-top: 30%;
     grid-area: texto;
 }
 .texto .titulo{
     font-weight: 700;
-    font-size: 40px;
+    font-size: 5.0rem;
+    color: black;
 }
 
 .texto .texto-hero{
     margin-top: 10px;
     font-weight: 600;
     color: #477299;
+    font-size: 1.5rem;
 }
 
 .botao{
@@ -99,7 +131,7 @@ body{
 }
 .div-img{
     grid-area: img;
-    background: url(img_section.jpg);
+    background: url(img/img_section.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -113,7 +145,7 @@ body{
     grid-template-areas: "teste2"
      "teste3";
      padding: 30px;
-     
+    row-gap: 3.0rem;
 }
 
 .servicos h1{
@@ -181,16 +213,19 @@ body{
 
 .sobre-nos .titulo{
     font-weight: 700;
-    font-size: 30px;
+    font-size: 3.0rem;
+    
 }
 
 .titulo-azul{
     color: #477299;
     font-weight: 600;
+    font-size: 1.6rem;
 }
 
 .parte2 p{
     color: #333;
+    font-size: 1.5rem;
 }
 
 .gestao-eficiente{
@@ -216,7 +251,7 @@ body{
 
 .div-img2{
     grid-area: img2;
-    background: url(img_section3.jpg);
+    background: url(img/img_section3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -224,6 +259,7 @@ body{
 
 .estrategia{
     grid-area: serv;
+    padding: 2%;
 }
 
 .div-img2 img{
@@ -231,24 +267,20 @@ body{
 }
 .estrategia h1{
     color: #a4d7ef;
-    font-size: 30px;
+    font-size: 3.0rem;
 }
 
 .estrategia p{
     color: #fff;
     font-weight: 700;
     margin: 20px 0 20px 0;
-    
-}
-
-.estrategia ul li{
-    
+    font-size: 1.5rem;
 }
 
 .estrategia ul p{
     display: inline;
     margin-left: 15px;
-    
+    font-size: 1.5rem;
 }
 
 /*PARTE 4*/
@@ -265,7 +297,7 @@ body{
     margin-left: 2%;
 }
 .texto-mockup h1{
-    font-size: 30px;
+    font-size: 3.0rem;
     font-weight: 700;
     color: #2a75b5;
 }
@@ -273,6 +305,7 @@ body{
 .texto-mockup p{
     color: #333;
     text-align: left;
+    font-size: 1.5rem;
 }
 
 .texto-mockup button{
@@ -282,6 +315,7 @@ body{
     border: 2px solid #0b4257;
     font-weight: 700;
     margin-top: 10px;
+    font-size: 1.6rem;
 }
 
 /*NEWSLETTER*/
@@ -297,7 +331,7 @@ body{
 }
 
 .texto-form h1{
-    font-size: 30px;
+    font-size: 3.0rem;
     font-weight: 700;
     color: #fff;
     margin-bottom: 10px;
@@ -306,12 +340,14 @@ body{
 
 .texto-form p{
     color: #fff;
+    font-size: 1.5rem;
 }
 
 form{
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2%;
+    
 }
 
 form input{
@@ -349,6 +385,7 @@ input::placeholder{
     font-weight: 700;
     border-style: none;
     padding: 10px 5px 10px 5px;
+    font-size: 1.6rem;
 }
 
 .newsletter .div-botao{
@@ -370,20 +407,23 @@ input::placeholder{
 
 .texto-footer h2{
     color: #fff;
-    font-size: 35px;
+    font-size: 3.0rem;
     font-weight: 500;
 }
 
 .texto-footer p{
     color: #fff;
+    font-size: 1.5rem;
 }
 
 .footer-menu h2,a{
     color: #fff;
+    font-size: 1.5rem;
 }
 
-.footer-sobre{
+.footer-sobre h2,p{
     color: #fff;
+    font-size: 1.5rem;
 }
 
 .direitos-reservados{
@@ -391,7 +431,14 @@ input::placeholder{
     color: #fff;
     text-align: center;
     padding: 15px;
+    
 }
+
+.direitos-reservados p{
+    font-size: 1.5rem;
+}
+
+
 @media (max-width: 1120px){
     html{
         font-size: 50%;
@@ -418,7 +465,7 @@ input::placeholder{
     }
 }
 
-@media (max-width: 540px){
+@media (max-width: 700px){
     
     .imagens{display: none;}
 
@@ -426,16 +473,23 @@ input::placeholder{
         display: grid;
         grid-template-columns: 1fr;
         justify-items: center;
-       /* background-image: url("forma_mobile.png");*/
+       /* background-image: url("img/forma_mobile.png");*/
         background-repeat: no-repeat;
         background-size: contain;
         
     }
+
+    .hero-mobile{
+        width: auto;
+        height: auto;
+        display: block;
+    }
+
     .hero .texto{
         display: flex;
         flex-direction: column;
         align-items: center;
-        
+        margin-top: auto;
     }
     .hero p{
         text-align: center;
@@ -451,11 +505,96 @@ input::placeholder{
         
     }
 
+    .cabecalho{
+        justify-content: space-between;
+        background: #003b50;
+    }
+
     .cabecalho .logo-div{
-        width: 28rem;
+        width: 20rem;
     }
     .cabecalho .menu{
         display: none;
+    }
+
+    .um,
+    .dois,
+    .tres {
+        background-color: #fff;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+        transition-duration: 0.3s;
+    }
+
+    .menu-toogle{
+        width: 40px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    /*ATIVANDO MENU*/
+
+    .menu-section.on{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 10;
+        background: linear-gradient(180deg, rgba(0,59,80,1) 0%, rgba(17,110,143,1) 50%, rgba(0,124,149,1) 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-section.on .menu{
+        display: none;
+        
+    }
+
+    .menu-section.on .menu-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .menu-mobile ul{
+        text-align: center;
+    }
+
+    .menu-mobile ul a{
+        transition-duration: 0.5s;
+        font-size: 3rem;
+        line-height: 8rem;
+        display: block;
+    }
+
+    .menu-section.on .menu-toogle .menu-mobile ul{
+        text-align: center;
+        
+    }
+
+    .menu-section.on .menu-toogle{
+        display: block;
+    }
+
+    .menu-section.on .menu-toogle{
+        position: absolute;
+        right: 25px;
+        top: 15px;
+
+    }
+
+    .menu-section.on .menu-toogle .um{
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .menu-section.on .menu-toogle .dois{
+        opacity: 0;
+    }
+
+    .menu-section.on .menu-toogle .tres{
+        transform: rotate(-45deg) translate(8px, -9px);
     }
 
     .parte1{
@@ -524,6 +663,5 @@ input::placeholder{
     .footer-menu{
         margin: 2rem 0 2rem 0;
     }
-
-    
 }
+
